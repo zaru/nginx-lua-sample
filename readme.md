@@ -1,7 +1,14 @@
+# First contentful paint 最適化 nginx lua モジュールサンプル
+
 ```
-docker build . -t nginx-lua-sample && dk docker --rm -p 80:80 nginx-lua-sample
+docker-compose build
+docker-compose up
+```
 
+```
+# not optimize page
+curl http://localhost:8000/
 
-cd app/php
-php -S 0.0.0.0:9999
+# optimze page
+curl http://localhost:8000/fcp.html
 ```
